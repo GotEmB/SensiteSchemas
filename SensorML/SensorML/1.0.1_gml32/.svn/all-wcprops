@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ogc-projects/!svn/ver/2455/ows/swe/trunk/sensorML/1.0.1_gml32
+END
+sensorML.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ogc-projects/!svn/ver/2460/ows/swe/trunk/sensorML/1.0.1_gml32/sensorML.xsd
+END
+system.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ogc-projects/!svn/ver/2460/ows/swe/trunk/sensorML/1.0.1_gml32/system.xsd
+END
+ChangeLog.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/ogc-projects/!svn/ver/2456/ows/swe/trunk/sensorML/1.0.1_gml32/ChangeLog.txt
+END
+base.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ogc-projects/!svn/ver/2460/ows/swe/trunk/sensorML/1.0.1_gml32/base.xsd
+END
+Readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ogc-projects/!svn/ver/2455/ows/swe/trunk/sensorML/1.0.1_gml32/Readme.txt
+END
+process.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ogc-projects/!svn/ver/2460/ows/swe/trunk/sensorML/1.0.1_gml32/process.xsd
+END
+method.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ogc-projects/!svn/ver/2460/ows/swe/trunk/sensorML/1.0.1_gml32/method.xsd
+END

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:sml="http://www.opengis.net/sensorML/1.0/gml32"
+	xmlns:swe="http://www.opengis.net/swe/1.0/gml32"
+	targetNamespace="http://www.opengis.net/sensorML/1.0/gml32"
+	elementFormDefault="qualified"
+	attributeFormDefault="unqualified"
+	version="1">
+	<xs:annotation>
+		<xs:documentation>SensorML document root definition
+
+				Copyright (c) 2008 OGC, All Rights Reserved.
+				For conditions, see OGC Software Notice - http://www.opengeospatial.org/legal/
+		</xs:documentation>
+	</xs:annotation>
+	<!-- ================================================= -->
+	<xs:import
+		namespace="http://www.opengis.net/gml/3.2"
+		schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+	<xs:import
+		namespace="http://www.opengis.net/swe/1.0/gml32"
+		schemaLocation="../../sweCommon/1.0.1_gml32/swe.xsd"/>
+	<xs:include
+		schemaLocation="./system.xsd"/>
+	<!-- ================================================= -->
+	<xs:element
+		name="SensorML">
+		<xs:annotation>
+			<xs:documentation>SensorML document root</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:group
+					ref="sml:metadataGroup"/>
+				<xs:element
+					name="member"
+					maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element
+								ref="sml:AbstractProcess"/>
+							<xs:element
+								ref="sml:DocumentList"/>
+							<xs:element
+								ref="sml:ContactList"/>
+						</xs:choice>
+						<xs:attributeGroup
+							ref="gml:AssociationAttributeGroup"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute
+				name="version"
+				type="xs:token"
+				use="required"
+				fixed="1.0.1"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

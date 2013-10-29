@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="sensite"
+    elementFormDefault="qualified"
+    xmlns="sensite"
+    xmlns:mstns="sensite"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:swe="http://www.opengis.net/swe/1.0/gml32"
+>
+  <xs:import namespace="http://www.opengis.net/swe/1.0/gml32" schemaLocation="./SensorML/sweCommon/1.0.1_gml32/swe.xsd" />
+  <xs:complexType name="PhenomenonContext">
+    <xs:all>
+      <xs:element name="location" type="swe:PositionType" />
+      <xs:element name="temperature">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="value" type="xs:integer" />
+            <xs:element name="unit">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="K" />
+                  <xs:enumeration value="C" />
+                  <xs:enumeration value="F" />
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="pressure">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="value" type="xs:integer" />
+            <xs:element name="unit">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="Pa" />
+                  <xs:enumeration value="psi" />
+                  <xs:enumeration value="bar" />
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+</xs:schema>

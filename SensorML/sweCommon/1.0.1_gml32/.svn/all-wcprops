@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ogc-projects/!svn/ver/2454/ows/swe/trunk/sweCommon/1.0.1_gml32
+END
+basicTypes.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/ogc-projects/!svn/ver/2461/ows/swe/trunk/sweCommon/1.0.1_gml32/basicTypes.xsd
+END
+encoding.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/ogc-projects/!svn/ver/2459/ows/swe/trunk/sweCommon/1.0.1_gml32/encoding.xsd
+END
+phenomenon.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/ogc-projects/!svn/ver/2459/ows/swe/trunk/sweCommon/1.0.1_gml32/phenomenon.xsd
+END
+ChangeLog.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/ogc-projects/!svn/ver/2459/ows/swe/trunk/sweCommon/1.0.1_gml32/ChangeLog.txt
+END
+curveTypes.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/ogc-projects/!svn/ver/2459/ows/swe/trunk/sweCommon/1.0.1_gml32/curveTypes.xsd
+END
+data.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ogc-projects/!svn/ver/2459/ows/swe/trunk/sweCommon/1.0.1_gml32/data.xsd
+END
+positionTypes.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/ogc-projects/!svn/ver/2459/ows/swe/trunk/sweCommon/1.0.1_gml32/positionTypes.xsd
+END
+xmlData.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ogc-projects/!svn/ver/2459/ows/swe/trunk/sweCommon/1.0.1_gml32/xmlData.xsd
+END
+aggregateTypes.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ogc-projects/!svn/ver/2459/ows/swe/trunk/sweCommon/1.0.1_gml32/aggregateTypes.xsd
+END
+temporalAggregates.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ogc-projects/!svn/ver/2459/ows/swe/trunk/sweCommon/1.0.1_gml32/temporalAggregates.xsd
+END
+Readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ogc-projects/!svn/ver/2454/ows/swe/trunk/sweCommon/1.0.1_gml32/Readme.txt
+END
+simpleTypes.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/ogc-projects/!svn/ver/2461/ows/swe/trunk/sweCommon/1.0.1_gml32/simpleTypes.xsd
+END
+swe.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ogc-projects/!svn/ver/2459/ows/swe/trunk/sweCommon/1.0.1_gml32/swe.xsd
+END
+sweCommonPackageDependencies.png
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/ogc-projects/!svn/ver/2454/ows/swe/trunk/sweCommon/1.0.1_gml32/sweCommonPackageDependencies.png
+END

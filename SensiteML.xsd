@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="sensite"
+    elementFormDefault="qualified"
+    xmlns="sensite"
+    xmlns:mstns="sensite"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:include schemaLocation="./DataSource.xsd" />
+  <xs:include schemaLocation="./PhenomenonContext.xsd" />
+</xs:schema>

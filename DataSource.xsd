@@ -1,20 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema targetNamespace="sensite/dataSource"
+<xs:schema targetNamespace="sensite"
     elementFormDefault="qualified"
-    xmlns="sensite/dataSource"
-    xmlns:mstns="sensite/dataSource"
+    xmlns="sensite"
+    xmlns:mstns="sensite"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:sml="http://www.opengis.net/sensorML/1.0/gml32"
 >
-  <xs:complexType name="sensorType">
-    
+  <xs:import namespace="http://www.opengis.net/sensorML/1.0/gml32" schemaLocation="./SensorML/SensorML/1.0.1_gml32/sensorML.xsd" />
+  <xs:complexType name="SensorType">
+    <xs:sequence>
+      <xs:element name="sensorML" type="sml:DataSourceType" />
+    </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="humanType">
-    
+  <xs:complexType name="HumanType">
+    <xs:sequence>
+      <xs:element name="name">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="first" type="xs:string" minOccurs="0" />
+            <xs:element name="middle" type="xs:string" minOccurs="0" />
+            <xs:element name="last" type="xs:string" minOccurs="0" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="dataSourceType">
+  <xs:complexType name="DataSourceType">
     <xs:choice>
-      <xs:element name="human" type="humanType" />
-      <xs:element name="sensor" type="sensorType" />
+      <xs:element name="human" type="HumanType" />
+      <xs:element name="sensor" type="SensorType" />
     </xs:choice>
   </xs:complexType>
 </xs:schema>
