@@ -5,8 +5,10 @@
     xmlns:mstns="sensite"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
 >
-  <xs:include schemaLocation="./DataSource.xsd" />
-  <xs:include schemaLocation="./PhenomenonContext.xsd" />
   <xs:include schemaLocation="./QoI.xsd" />
-  <xs:include schemaLocation="./Information.xsd" />
+  <xs:complexType name="InformationType">
+    <xs:all>
+      <xs:element name="qoI" type="BaseQoIType" />
+    </xs:all>
+  </xs:complexType>
 </xs:schema>

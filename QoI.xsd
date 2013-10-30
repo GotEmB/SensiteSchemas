@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="sensite"
+    elementFormDefault="qualified"
+    xmlns="sensite"
+    xmlns:mstns="sensite"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:include schemaLocation="./Information.xsd" />
+  <xs:complexType name="BaseQoIType">
+    <xs:all>
+      <xs:element name="information" type="InformationType" />
+      <xs:element name="context" type="QoIContextType" />
+    </xs:all>
+  </xs:complexType>
+  <xs:complexType name="QoIContextType">
+    <xs:sequence>
+      <xs:element name="qoI" type="BaseQoIType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="QoISpatialContextAttributeType">
+    <xs:complexContent>
+      <xs:extension base="QoIContextType">
+        <xs:sequence>
+          <xs:element name="name" type="xs:string" />
+          <xs:element name="lowerBound" type="QoIMetricType" />
+          <xs:element name="upperBound" type="QoIMetricType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="QoITemporalContextAttributeType">
+    <xs:complexContent>
+      <xs:extension base="QoIContextType">
+        <xs:sequence>
+          <xs:element name="name" type="xs:string" />
+          <xs:element name="lowerBound" type="xs:int" />
+          <xs:element name="upperBound" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="QoIMetricType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" />
+      <xs:element name="applicable" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="QoIQuantitativeMetricType">
+    <xs:complexContent>
+      <xs:extension base="QoIMetricType">
+        <xs:sequence>
+          <xs:element name="errorRange" type="xs:double" />
+          <xs:element name="value" type="xs:double" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="QoIStatisticalMetricType">
+    <xs:complexContent>
+      <xs:extension base="QoIMetricType">
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="QoIEnumeratedMetricType">
+    <xs:complexContent>
+      <xs:extension base="QoIMetricType">
+        <xs:sequence>
+          <xs:element name="permissibleValues">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xs:string" maxOccurs="unbounded" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="value" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="AppDomainContext">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" />
+      <xs:element name="description" type="xs:anyURI" />
+      <xs:element name="standardName" type="xs:string" />
+      <xs:element name="standardDescription" type="xs:anyURI" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
